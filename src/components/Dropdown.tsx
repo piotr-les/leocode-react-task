@@ -42,6 +42,7 @@ const Dropdown: FC<DropdownProps> = ({ isOpen }) => {
 
 	useEffect(() => {
 		setCounterValue(chosenValues.length);
+		console.log(chosenValues);
 	}, [chosenValues]);
 
 	const removeFromChosenValues = (uni: University) => {
